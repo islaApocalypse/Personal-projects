@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Bradley's Superhero Trvia</title>
+</head>
+<body>
+    
+    <header></header>
+    <nav></nav>
+    <main>
+
+        <div>
+            <h1>Superhero Trivia!</h1>
+            <h3>12 Questions = 48Pts total available</h3>
+            <h5>Hints = -1Pts per hint</h5>
+            <p>Once begun, you will be given a question about a superhero. Try to guess which hero it is in the given question, before the timer runs out or else 0Pts! To help, at certain time intervals a hint will be displayed. 3 hints total will reveal but -1 point each!</p>
+            <button id="PlayBtn" onclick="StartGame();">Start Game</button>
+    
+        </div>
+
+        <div id="GameDiv" class="Hidden">
+            <p id="Score">Score: 0</p>
+            <p id="Question"></p>
+            <p id="Hint"></p>
+            <input id="UserGuess" type="text">
+            <button onclick="SubmitGuess();">Submit Guess!</button>
+            <p id="Points">4 points</p>
+            <p id="Answer"></p>
+        </div>
+    </main>
+    <footer>
+        &copy;2021 B.R.W @HolyDevs.Inc
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
